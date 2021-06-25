@@ -18,7 +18,7 @@ mirror() {
 
     ${git} clone --mirror "${SOURCE}" "/root/git/${i}" && pushd "/root/git/${i}" || exit 1
     ${git} remote add 'target' "${TARGET}"  \
-      && ${git} push -f --mirror 'target'   \
+      && ${git} push 'target'               \
     popd || exit 1
   done
 }
