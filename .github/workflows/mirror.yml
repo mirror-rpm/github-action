@@ -1,0 +1,14 @@
+name: "Repository Mirror"
+
+on:
+  - push
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    name: "Mirror"
+    steps:
+      - uses: mirror-rpm/github-action@main
+        with:
+          user: "${{ secrets.MIRROR_USER_GITHUB }}"
+          token: "${{ secrets.MIRROR_TOKEN_GITHUB }}"
