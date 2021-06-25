@@ -6,7 +6,9 @@ TOKEN="${2}"
 map="_rpm_src.txt"
 
 git=$( command -v git )
+curl=$( command -v curl )
 
+${curl} -o "${map}" 'https://raw.githubusercontent.com/mirror-rpm/github-action/main/_rpm_src.txt'
 mapfile -t rpm_src < "${map}"
 
 mirror() {
