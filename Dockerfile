@@ -7,6 +7,6 @@ LABEL "repository"=""
 LABEL "homepage"="https://pkgstore.github.io/"
 
 COPY *.sh /
-RUN apk add --no-cache bash git git-lfs
+RUN apk add --no-cache bash curl git git-lfs
 
 ENTRYPOINT ["/entrypoint.sh"]
