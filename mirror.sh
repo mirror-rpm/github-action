@@ -16,12 +16,10 @@ mirror() {
     SOURCE="https://src.fedoraproject.org/rpms/${i}.git"
     TARGET="https://${USER}:${TOKEN}@github.com/mirror-rpm/${i}.git"
 
-    mkdir -p "/root/git" && cd "/root/git" || exit 1
-
-    ${git} clone --mirror "${SOURCE}" "${i}" && cd "${i}" || exit 1
+    ${git} clone --mirror "${SOURCE}" "/root/git/${i}" && pushd "/root/git/${i}" || exit 1
     ${git} remote add 'target' "${TARGET}"  \
       && ${git} push 'target'               \
-    cd ..
+      && popd || exit 1
   done
 }
 
