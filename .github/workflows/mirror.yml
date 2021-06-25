@@ -1,4 +1,4 @@
-name: "Repository Mirror"
+name: "RPM Mirror"
 
 on:
   - push
