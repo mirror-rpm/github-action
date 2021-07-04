@@ -17,6 +17,7 @@ neovim
 nginx
 postfix
 sscg
+tree-sitter
 vsftpd
 weechat
 zstd
