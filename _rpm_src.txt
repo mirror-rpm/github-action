@@ -12,6 +12,7 @@ libssh2
 make
 mc
 mutt
+neovim
 nginx
 postfix
 sscg
