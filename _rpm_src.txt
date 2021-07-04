@@ -9,6 +9,7 @@ icecast
 ices
 libgsasl
 libssh2
+libtree
 make
 mc
 mutt
