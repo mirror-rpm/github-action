@@ -1,4 +1,5 @@
 brotli
+cmake
 exim
 freetype
 git
@@ -8,6 +9,7 @@ icecast
 ices
 libgsasl
 libssh2
+make
 mc
 mutt
 nginx
