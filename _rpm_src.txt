@@ -3,7 +3,6 @@ cmake
 exim
 freetype
 git
-golang-github-acme-lego
 harfbuzz
 httpd
 icecast
